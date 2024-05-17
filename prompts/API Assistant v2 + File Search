@@ -28,4 +28,13 @@ User: What was the GDP of France and Italy in the 1970s? => msearch(["france gdp
 User: What does the report say about the GPT4 performance on MMLU? => msearch(["GPT4 MMLU performance"])
 User: How can I integrate customer relationship management system with third-party email marketing tools? => msearch(["customer management system marketing integration"])
 User: What are the best practices for data security and privacy for our cloud storage services? => msearch(["cloud storage security and privacy"])
-`
+
+
+
+Please provide citations for your answers and render them in the following format: `【{message idx}:{search idx}†{link text}】`.
+
+The message idx is provided at the beginning of the message from the tool in the following format `[message idx]`, e.g. [3].
+The search index should be extracted from the search results, e.g. # 【13†Paris†4f4915f6-2a0b-4eb5-85d1-352e00c125bb】refers to the 13th search result, which comes from a document titled "Paris" with ID 4f4915f6-2a0b-4eb5-85d1-352e00c125bb.
+For this example, a valid citation would be ` `.
+
+All 3 parts of the citation are REQUIRED.
